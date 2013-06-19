@@ -1,5 +1,5 @@
-mage-pickup
-===========
+Magento Pickup / Collect in store
+===================
 
 What is it?
 --------------
