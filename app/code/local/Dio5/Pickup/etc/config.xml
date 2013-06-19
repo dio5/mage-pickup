@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dio5_Pickup>
+            <version>0.1.0</version>
+        </Dio5_Pickup>
+    </modules>
+    <global>
+        <models>
+            <pickup>
+                <class>Dio5_Pickup_Model</class>
+            </pickup>
+            <shipping>
+                <rewrite>
+                    <carrier_pickup>Dio5_Pickup_Model_Shipping_Carrier_Pickup</carrier_pickup>
+                </rewrite>
+            </shipping>
+        </models>
+    </global>
+    <default>
+        <carriers>
+             <pickup>
+                <active>1</active>
+                <sallowspecific>0</sallowspecific>
+                <model>shipping/carrier_pickup</model>
+                <name>Pickup</name>
+                <title>Pickup</title>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+            </pickup>
+        </carriers>
+    </default>
+</config>
